@@ -1,5 +1,5 @@
-USING openjdk:17-alpine
+FROM amazoncorretto:17
 
-RUN chmod +x /app/start.sh
+WORKDIR "/app"
 
 CMD ["/app/start.sh"]
